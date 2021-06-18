@@ -1,0 +1,15 @@
+.tower-swiper .tower-item {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}
+.zj{
+  margin:0rpx;
+}
+
+/*分割线样式*/
+.divLine{
+  background: #448AFF;
+  height: 3px;
+  margin-top:12rpx;
+ }

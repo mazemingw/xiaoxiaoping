@@ -1,0 +1,63 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">院校库</view>
+</cu-custom>
+
+<view class="cu-bar search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="学校名称、代码" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-blue shadow-blur round">搜索</button>
+    </view>
+  </view>
+
+
+  <view class="bg-blue shadow-blur content">
+      <view class="cu-list menu-avatar radius">
+
+
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(http://www.gxcme.edu.cn/style/newindex/img/gxcme.jpg);"></view>
+          <view class="content">
+            <navigator url="../detail/detail">
+            <view class="text-grey">广西机电职业技术学院
+              <view class="cu-tag round text-green sm">官方认证</view>
+            </view>
+            <view class="text-gray text-sm">代码：10867 西乡塘区</view>
+          </navigator>
+          </view>
+          <view class="action">
+            <view class="cu-tag round bg-green sm">广西▪南宁</view>
+          </view> 
+        </view>
+
+  
+
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/gxun2.png);"></view>
+          <view class="content">
+            <navigator url="../detail/detail">
+            <view class="text-grey">广西民族大学
+              <view class="cu-tag round text-green sm">官方认证</view>
+            </view>
+            <view class="text-gray text-sm">代码：10608 西乡塘区</view>
+          </navigator>
+          </view>
+          <view class="action">
+            <view class="cu-tag round bg-green sm">广西▪南宁</view>  
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+    <view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+        <text class="text-grey nofound">再找也没有啦~</text>
+    </view>
+  </view>
+  </view>

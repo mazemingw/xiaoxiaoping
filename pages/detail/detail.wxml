@@ -1,0 +1,194 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">详情页面</view>
+</cu-custom>
+
+<view class="cu-bar bg-white">
+    <view class="action border-title">
+      <text class="text-l text-bold text-blue">宣传视频</text>
+      <text class="bg-gradual-blue" style="width:3rem"></text>
+    </view>
+  </view>
+
+<view class="section tc" id="videoplayer">
+  <video id="myVideo" src="https://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/123.mp4" danmu-list="{{danmuList}}" enable controls style="width: 100%;  display: inline-block; box-sizing: border-box; top: 0rpx; position: relative"></video>
+</view>
+
+<view class="cu-bar bg-white">
+    <view class="action border-title">
+      <text class="text-l text-bold text-blue">校园风光</text>
+      <text class="bg-gradual-blue" style="width:3rem"></text>
+    </view>
+  </view>
+
+<swiper class="card-swiper {{DotStyle?'square-dot':'square-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}} ">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <!-- <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video> -->
+    </view>
+  </swiper-item>
+</swiper>
+
+
+<!-- -----------------------------------学校概况----------------------------------------- -->
+
+  <view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+  <view class="padding bg-white">
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue">学校概况：</text>
+    <view class="cu-tag radius bg-blue">男生比例</view>
+    <view class="cu-tag radius bg-red">女生比例</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-progress radius striped active">
+    <view class="bg-blue" style="width:73%;">73%</view>
+    <view class="bg-red" style="width:27%;">27%</view>
+    </view>
+    </view>
+    
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue">升本概率：</text>
+    <view class="cu-tag radius bg-green">公办本科</view>
+    <view class="cu-tag radius bg-red">民办本科</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-progress radius striped active">
+    <view class="bg-green" style="width:23%;">23%</view>
+    <view class="bg-red" style="width:7%;">7%</view>
+    </view>
+    </view>
+
+  </view>
+    </view>
+  </view>
+  </view>
+
+<!-- -----------------------------------近年招生情况汇总----------------------------------------- -->
+
+  <view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+  <view class="padding bg-white">
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue">近年招生情况汇总 </text>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue"> 2021：</text>
+    <view class="cu-tag radius bg-blue">单招5816</view>
+    <view class="cu-tag radius bg-red">对口5793 </view>
+    <view class="cu-tag radius bg-green">统招NaN</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-progress radius striped active">
+    <view class="bg-blue" style="width:39%;">39%</view>
+    <view class="bg-red" style="width:39%;">39%</view>
+    <view class="bg-green" style="width:22%;">22%</view>
+    </view>
+    </view>
+
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue"> 2020：</text>
+    <view class="cu-tag radius bg-blue">单招5163</view>
+    <view class="cu-tag radius bg-red">对口2143</view>
+    <view class="cu-tag radius bg-green">统招1290</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-progress radius striped active">
+    <view class="bg-blue" style="width:60%;">60%</view>
+    <view class="bg-red" style="width:24%;">24%</view>
+    <view class="bg-green" style="width:16%;">16%</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue"> 2019：</text>
+    <view class="cu-tag radius bg-blue">单招2100</view>
+    <view class="cu-tag radius bg-red">对口900</view>
+    <view class="cu-tag radius bg-green">统招2200</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-progress radius striped active">
+    <view class="bg-blue" style="width:40%;">40%</view>
+    <view class="bg-red" style="width:17%;">17%</view>
+    <view class="bg-green" style="width:43%;">43%</view>
+    </view>
+    </view>
+    
+    
+
+  </view>
+    </view>
+  </view>
+  </view>
+
+<!-- -----------------------------------学校名称----------------------------------------- -->
+
+  <view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+  <view class="padding bg-white">
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue">学校名称：</text>
+    <view class="cu-tag radius bg-blue">广西机电职业技术学院</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+    <text class="text-l text-bold text-blue">创办年份：  </text>
+    <view class="cu-tag radius bg-blue">1958年</view>
+    </view>
+    </view>
+
+    <view class="flex">
+      <view class="cu-bar bg-white">
+      <text class="text-l text-bold text-blue">院校代码：</text>
+      <view class="cu-tag radius bg-blue">10867</view>
+    </view>
+    </view>
+
+    <view class="flex">
+    <view class="cu-bar bg-white">
+      <text class="text-l text-bold text-blue">学校类型：</text>
+      <view class="cu-tag radius bg-blue">公办专科</view>
+    </view>
+    </view>
+
+    <view class="flex">
+      <view class="cu-bar bg-white">
+      <text class="text-l text-bold text-blue">学校占地：</text>
+      <view class="cu-tag radius bg-blue">776亩</view>
+    </view>
+    </view>
+
+  </view>
+    </view>
+  </view>
+  </view>
+

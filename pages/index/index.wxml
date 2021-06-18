@@ -1,0 +1,120 @@
+<cu-custom bgColor="bg-blue">
+  <view slot="content">校小评</view>
+</cu-custom>
+
+<swiper class="card-swiper {{DotStyle?'square-dot':'square-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}} ">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <!-- <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video> -->
+    </view>
+  </swiper-item>
+</swiper>
+
+<!-- 要保持与下方蓝线同宽，只能这样套进去 -->
+<view class="flex align-center ">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+        <view class="bg-img zj " style="background-image: url('http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/ZJ.png');height:64rpx;"></view>
+      </view>
+    </view>
+  </view>
+
+<!-- 功能菜单下方蓝线 -->
+    <view class="flex align-center ">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+        <text class="text-blue">功能菜单</text>
+        <view class="divLine"></view>
+
+
+  <view class="grid col-3 ">
+   
+  <view class="padding-sm">
+    <navigator url="../sclib/sclib">
+    <view class="bg-blue padding radius text-center">
+      <view class="text-lg">院校库 </view>
+    </view>
+  </navigator>
+  </view>
+
+
+  <view class="padding-sm">
+    <navigator url="../prolib/prolib">
+    <view class="bg-gradual-orange padding radius text-center ">
+      <view class="text-lg">专业库</view>
+    </view>
+  </navigator>
+  </view>
+
+  <view class="padding-sm">
+    <navigator url="../fsline/fsline">
+    <view class="bg-gradual-green padding radius text-center ">
+      <view class="text-lg">分数线</view>
+    </view>
+  </navigator>
+  </view>
+
+  <view class="padding-sm">
+    <navigator url="../phb/phb">
+    <view class="bg-gradual-blue padding radius text-center ">
+      <view class="text-lg">排行榜</view>
+    </view>
+  </navigator>
+  </view>
+
+  <view class="padding-sm">
+    <navigator url="../goodb/goodb">
+    <view class="bg-gradual-purple padding radius text-center ">
+      <view class="text-lg">好评榜</view>
+    </view>
+  </navigator>
+  </view>
+
+  <view class="padding-sm">
+    <navigator url="../yxq/yxq">
+    <view class="bg-gradual-pink padding radius text-center">
+      <view class="text-lg">院校圈</view>
+    </view>
+  </navigator>
+  </view>
+</view>
+
+
+      </view>
+    </view>
+  </view>
+
+<!-- 通知公告 -->
+  <view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+        <text class="text-blue">通知公告</text>
+        <view class="divLine"></view>
+        
+        <view class="padding bg-white">
+    <view class="flex">
+      <view class="flex-sub bg-grey padding-sm margin-xs radius">等分列</view>
+      <view class="flex-sub bg-grey padding-sm margin-xs radius">等分列</view>
+    </view>
+    <view class="flex">
+      <view class="flex-sub bg-grey padding-sm margin-xs radius">假装我是通知</view>
+      
+    </view>
+  </view>
+
+    </view>
+  </view>
+  </view>
+
+
+<!-- 通知公告 -->
+<view class="flex align-center">
+    <view class="flex-sub  text-center">
+      <view class="text-lg padding">
+        <text class="text-blue">近期热点</text>
+        <view class="divLine"></view>
+    </view>
+  </view>
+  </view>
+

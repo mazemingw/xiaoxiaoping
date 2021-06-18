@@ -1,0 +1,10 @@
+/*分割线样式*/
+.divLine{
+  background: #448AFF;
+  height: 3px;
+  margin-top:12rpx;
+  margin-bottom: 12rpx;
+ }
+ .nofound{
+   margin: 32rpx;
+ }

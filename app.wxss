@@ -1,0 +1,6 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+page {
+  font-family:‘Lucida Sans’, ‘Lucida Sans Regular’, ‘Lucida Grande’, ‘Lucida Sans Unicode’, Geneva, Verdana, sans-serif;
+   
+}

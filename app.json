@@ -1,0 +1,62 @@
+
+
+{
+  "pages": [
+  
+    "pages/index/index",
+
+    "pages/sclib/sclib",
+    "pages/detail/detail",
+
+    "pages/prolib/prolib",
+
+    "pages/fsline/fsline",
+    "pages/phb/phb",
+    "pages/goodb/goodb",
+    "pages/yxq/yxq",
+
+
+    "pages/newday/newday",
+
+    "pages/me/me"
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Powered by ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/images/tabbar/index_cur.png",
+        "iconPath": "/images/tabbar/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/tabbar/newday_cur.png",
+        "iconPath": "/images/tabbar/newday.png",
+        "pagePath": "pages/newday/newday",
+        "text": "每日"
+      },
+      {
+        "selectedIconPath": "/images/tabbar/me_cur.png",
+        "iconPath": "/images/tabbar/me.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  }
+}
