@@ -55,7 +55,7 @@
     
     <view class="flex">
     <view class="cu-bar bg-white">
-    <text class="text-l text-bold text-blue">升本概率：</text>
+    <text class="text-l text-bold text-blue">升本去向：</text>
     <view class="cu-tag radius bg-green">公办本科</view>
     <view class="cu-tag radius bg-red">民办本科</view>
     </view>
@@ -89,9 +89,9 @@
     <view class="flex">
     <view class="cu-bar bg-white">
     <text class="text-l text-bold text-blue"> 2021：</text>
-    <view class="cu-tag radius bg-blue">单招5816</view>
-    <view class="cu-tag radius bg-red">对口5793 </view>
-    <view class="cu-tag radius bg-green">统招NaN</view>
+    <view class="cu-tag radius line-blue">单招5816</view>
+    <view class="cu-tag radius line-red">对口5793 </view>
+    <view class="cu-tag radius line-green">统招NaN</view>
     </view>
     </view>
 
@@ -107,9 +107,9 @@
     <view class="flex">
     <view class="cu-bar bg-white">
     <text class="text-l text-bold text-blue"> 2020：</text>
-    <view class="cu-tag radius bg-blue">单招5163</view>
-    <view class="cu-tag radius bg-red">对口2143</view>
-    <view class="cu-tag radius bg-green">统招1290</view>
+    <view class="cu-tag radius line-blue">单招5163</view>
+    <view class="cu-tag radius line-red">对口2143</view>
+    <view class="cu-tag radius line-green">统招1290</view>
     </view>
     </view>
 
@@ -124,9 +124,9 @@
     <view class="flex">
     <view class="cu-bar bg-white">
     <text class="text-l text-bold text-blue"> 2019：</text>
-    <view class="cu-tag radius bg-blue">单招2100</view>
-    <view class="cu-tag radius bg-red">对口900</view>
-    <view class="cu-tag radius bg-green">统招2200</view>
+    <view class="cu-tag radius line-blue">单招2100</view>
+    <view class="cu-tag radius line-red">对口900</view>
+    <view class="cu-tag radius line-green">统招2200</view>
     </view>
     </view>
 

@@ -8,23 +8,23 @@ Page({
     swiperList: [{
       id: 0,
       type: 'image',
-      url: 'http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/gxeea.png'
+      url: 'http://www.gxcme.edu.cn/style/newindex/img/hj.png'
     }, {
       id: 1,
         type: 'image',
-        url: 'http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/guet.png',
+        url: 'http://www.gxcme.edu.cn/style/newindex/img/view10.jpg',
     }, {
       id: 2,
       type: 'image',
-      url: 'http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/gxun.png'
+      url: 'http://www.gxcme.edu.cn/style/newindex/img/view12.jpg'
     }, {
       id: 3,
       type: 'image',
-      url: 'http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/gxcme.png'
+      url: 'http://www.gxcme.edu.cn/style/newindex/img/tsg.png'
     }, {
       id: 4,
       type: 'image',
-      url: 'http://cmosshenzhen.oss-cn-shenzhen.aliyuncs.com/swiper2/gxzyxy.png'
+      url: 'http://www.gxcme.edu.cn/style/newindex/img/view11.jpg'
     }],
   },
   
